@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Age Calculator</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<div class="container">
+			<!-- Enter data -->
+			<form action="#">
+				<div class="input-fields flex">
+					<div class="col col-1">
+						<label for="day" class="sm secondary">DAY</label>
+						<input id="day" class="field lg" type="text" placeholder="DD">
+						<p id="day-error" class="error hidden xs">The field is required.</p>
+					</div>
+					<div class="col col-2">
+						<label for="month" class="sm secondary">MONTH</label>
+						<input id="month" class="field lg" type="text" placeholder="MM">
+						<p id="month-error" class="error hidden xs">The field is required.</p>
+					</div>
+					<div class="col col-3">
+						<label for="year" class="sm secondary">YEAR</label>
+						<input id="year" class="field lg" type="text" placeholder="YYYY">
+						<p id="year-error" class="error hidden xs">The field is required.</p>
+					</div>
+				</div>
+				<div class="submit flex">
+					<input id="submit" type="submit" value=">" class="lg">
+				</div>
+			</form>
+			<!-- Result -->
+			<section class="results xl">
+				<div class="col">
+					<span id="year-result" class="age-number">--</span>
+					<span class="age-unit">years</span>
+					
+				</div>
+				<div class="col">
+					<span id="month-result" class="age-number">--</span>
+					<span class="age-unit">months</span>
+
+				</div>
+				<div class="col">
+					<span id="day-result" class="age-number">--</span>
+					<span class="age-unit">days</span>
+
+				</div>
+			</section>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

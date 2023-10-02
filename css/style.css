@@ -1,0 +1,177 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     font-family: 'Poppins', sans-serif;
+     background: #F0F0F0;
+     display: grid;
+     place-items: center; 
+     height: 100vh;
+}
+
+input {
+     display: block;
+     width: 60%;
+}
+
+input[type=submit] {
+     margin-bottom: -25px;
+     background-color: #7E4FF7;
+     color: #EBEBEB;
+     border: none;
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     cursor: pointer;
+}
+
+form {
+     border-bottom: 2px solid #EBEBEB;
+}
+
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.container {
+     background: #FFFFFF;
+     width: 60%;
+     max-width: 560px;
+     padding: 40px 20px;
+     border-radius: 15px 15px 60px 15px;
+}
+
+.flex {
+     display: flex;
+}
+
+.hidden {
+     display: none;
+}
+
+/* enter data */
+
+.input-fields {
+     padding-bottom: 30px;
+}
+
+.input-fields .col{
+     height: 100%;
+}
+
+.input-fields .col label{
+     font-weight: 700;
+}
+
+.input-fields .col p {
+     margin-top: 5px;
+}
+
+.col-1 {
+     order:3;
+}
+
+.col-2 {
+     order:2;
+}
+
+.col-3 {
+     order:1;
+}
+
+
+.field {
+     height: 100%;
+     min-height: 37px;
+     width: 85%;
+     font-weight: 700;
+     padding-left: 8px;
+}
+
+.submit {
+     justify-content: center;
+}
+
+/* results */
+.results {
+     padding: 30px 0;
+     font-weight: 800;
+     font-style: italic;
+}
+
+.age-number {
+     color: #7E4FF7;
+}
+
+
+/******************************************
+/* Typography
+/*******************************************/
+
+.xs {
+     font-size: 0.5rem;
+}
+
+.sm {
+     font-size: 0.8rem;
+}
+
+.lg {
+     font-size: 1.3rem;
+}
+
+.xl {
+     font-size: 3rem;
+}
+
+/******************************************
+/* Colors
+/*******************************************/
+
+.secondary {
+     color: #656565;
+}
+
+.accent {
+     color: #7E4FF7;
+}    
+
+.error {
+     color: red;
+}
+/******************************************
+/* Media Queries
+/*******************************************/
+
+@media screen and (min-width: 660px){
+     .submit {
+          justify-content: flex-end;
+     }
+
+     .input-fields {
+          width: 80%;
+     }
+}
